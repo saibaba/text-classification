@@ -76,6 +76,7 @@ For prediction (multinomial):
 
 Python version also demonstrates: smoothing (Laplace), underflow handling (use log), checking model error/correctness (confusion matrix)
 
+Todo: precision and recall for each category, F1 score averaging these.
 ```
 References
 ==========
@@ -87,3 +88,4 @@ References
 * https://towardsdatascience.com/multi-class-text-classification-with-scikit-learn-12f1e60e0a9f
 * http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 * http://ataspinar.com/2015/11/16/text-classification-and-sentiment-analysis/
+* https://stats.stackexchange.com/questions/51296/how-do-you-calculate-precision-and-recall-for-multiclass-classification-using-co

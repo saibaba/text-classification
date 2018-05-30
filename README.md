@@ -67,16 +67,23 @@ From training, calc:
  p(D|C) = P(C|D) * P(D) / P(C)
 
 Some notes:
-* If multiple occurances of a word is not clipped a single occurance, then we are using multinomial distribution
+* If multiple occurances of a word is important, then we are using multinomial distribution not binomial.
 * Features/attributes = Vocabulary of size k; Each word corresponds to one of x1, ... xk in the multinomial distribution with value for each being its frequency. And x1+...+xk = n (doc size, obviously not same n across all samples)
 
 For prediction (multinomial):
     P(C=ck|givenText) = P(C=ck) * product-for-each-vocab-entry-index-by-i [ P(wi|C=ck)^freqi ]
     Here freqi is the frequency of i-th vocabulary word 
 
-Python version also demonstrates: smoothing (Laplace), underflow handling (use log), checking model error/correctness (confusion matrix)
+Python version also demonstrates: smoothing (Laplace), underflow handling (use log), checking model error/correctness (confusion matrix), confidence interval for accuracy
 
 Todo: precision and recall for each category, F1 score averaging these.
+
+Usage:
+cleanup.py the data and create corpus.txt;
+classify.py on the corpus;
+
+Java version is a standalone and simplified version;
+
 ```
 References
 ==========

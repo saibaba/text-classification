@@ -89,3 +89,4 @@ References
 * http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
 * http://ataspinar.com/2015/11/16/text-classification-and-sentiment-analysis/
 * https://stats.stackexchange.com/questions/51296/how-do-you-calculate-precision-and-recall-for-multiclass-classification-using-co
+* http://www.cs.oberlin.edu/~aeck/Fall2017/CSCI374/Handouts/CSCI374_ConfidenceIntervals.pdf

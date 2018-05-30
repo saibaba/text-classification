@@ -167,7 +167,11 @@ def test_accuracy():
      
   print "Accuracy:", accuracy
   print "Missclassification Rate:", miss_class_rate
-  
+
+  ci_factor = 1.96 * math.sqrt(accuracy*(1.0-accuracy)/n)  
+  ci_low = accuracy - ci_factor
+  ci_high = accuracy + ci_factor
+  print "Confidence interval = [", ci_low, ",", ci_high, "]"
   print "------------------------------" 
 
 test_accuracy()

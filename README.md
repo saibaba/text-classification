@@ -1,6 +1,7 @@
 Naive Bayes
 ===========
 
+```
 D = word=w1, word=w2, ... list of words in the document
 C = classifications c1, c2, ... (denoted by ck below)
 
@@ -75,6 +76,7 @@ For prediction (multinomial):
 
 Python version also demonstrates: smoothing (Laplace), underflow handling (use log), checking model error/correctness (confusion matrix)
 
+```
 References
 ==========
 
